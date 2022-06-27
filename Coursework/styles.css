@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+#first {
+    font: small-caps;
+    font-size: 10px;
+    color: aqua;
+  }
+
+.axis path{
+    stroke:black;
+    shape-rendering: crispEdges;
+    fill: none;
+}
+.axis line{
+  stroke:black;
+  font-size: 15px;
+  shape-rendering: crispEdges;
+  fill: none;
+}
+.axis text{
+  stroke:black;
+  font-family: "Times New Roman", serif;
+  font-weight: 200;
+  font-size: 25px;
+}
+.x_axis path{
+  display: none;
+}
+
+.x_axis text{
+  font-weight: 400;
+  font-size: 17px;
+}
+
+
+.tooltip {
+    line-height: 0.5;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 10px;
+  }
+  /* stlyes tooltip bottom pointer */
+  .tooltip:after {
+    box-sizing: content-box;
+    font-size: 8px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.5);
+    content: "\25BC";
+    color: grey;
+    position: absolute;
+    text-align: center;
+  }
+  
+  .tooltip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
+
+.legend text {
+    fill: black;
+    font: "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 30;
+  }
+
+.line {
+  stroke-width: 6px;
+}
+
+.legend{
+  box-sizing: border-box;
+  border-style: solid;
+  fill: lightgray;
+  line-height: 1;
+  font-size: 30px;
+}
+
+.wealthLegend text{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.infantLegend text{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.paysLegend{
+  box-sizing: border-box;
+  border-style: solid;
+  fill: lightgray;
+  line-height: 1;
+}
+
+.paysLegend text{
+  font-size: 23px;
+  fill: black;
+  line-height: 2;
+  font-weight: 200;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 80px;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 120px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 40px;
+  color: black;
+}
+
+.backgroundyellow {
+  background-color: lightgoldenrodyellow;
+}
+
+.backgroundpolice{
+  background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("/images/police.jpeg");
+  background-size: 2000px;
+
+}
+
+.backgroundwealth{
+  background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("/images/wealth.jpeg");
+}
+.backgroundblue{
+  background-color: blue;
+}
+
+.backgroundjudge{
+  background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url("/images/judge.png");
+  background-size: 1500px;
+
+}
+.backgroundgap{
+  background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("/images/gap.jpeg");
+  background-size: 2500px;
+
+}
+
+.backgroundpoverty{
+  background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("/images/poverty.jpeg");
+  background-size: 2500px;
+
+}
+.backgroundbaby{
+  background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("/images/baby.jpeg");
+  background-size: 2500px;
+
+}
+.backgroundtiles{
+  background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("/images/backgroundtiles.jpeg");
+  background-size: 2500px;
+
+}
+
+
+.toptext{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.graph text{
+  font-size: 15px;
+  font-weight: bold;
+}

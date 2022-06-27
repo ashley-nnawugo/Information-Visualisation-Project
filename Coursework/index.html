@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Coursework</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="d3/d3.v3.js"></script>
+        <script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="Graphs/d3.legend.js"></script>
+        <link type="text/css" rel = "stylesheet"  href = "styles.css"/>
+    </head>
+    <body>  
+        <div class="w3-top backgroundtiles">
+            <div class="w3-bar w3-white w3-padding w3-card backgroundtiles" style="letter-spacing:4px;">
+              <a href="#home" class="w3-bar-item w3-button toptext backgroundtiles">Impact of your Ethnicity in your life</a>
+              <div class="w3-right w3-hide-small backgroundtiles ">                
+                <a href="#home" class="w3-bar-item w3-button toptext">Home</a>
+                <a href="#population" class="w3-bar-item w3-button toptext">Population</a>
+                <a href="#infantMort" class="w3-bar-item w3-button toptext">Infant Mortality</a>
+                <a href="#stopnsearch" class="w3-bar-item w3-button toptext">Stop and Search</a>
+                <a href="#wealth" class="w3-bar-item w3-button toptext">Wealth</a>
+                <a href="#conviction" class="w3-bar-item w3-button toptext">Convictions</a>
+                <a href="#pay" class="w3-bar-item w3-button toptext">Pay Gap</a>
+                <a href="#poverty" class="w3-bar-item w3-button toptext">Poverty</a>
+                <a href="#conclusion" class="w3-bar-item w3-button toptext">Conclusion</a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h2 class="w3-center backgroundtiles"> How Your Ethnicity Impacts your life in the UK </h2><br>
+        <header class="w3-display-container w3-content w3-wide backgroundtiles" style="max-width:1000px;min-width:500px" id="home">
+            <img class="w3-image backgroundtiles" src="/images/diversity.jpeg" alt="diversity" width="1600" height="800">
+            <div class="w3-display-bottomleft w3-padding-large w3-opacity backgroundtiles">
+            </div>
+        </header>
+        <div class="w3-row w3-padding-64 backgroundtiles" id="population">
+            <h1 class="w3-center">Population Distribution</h1><br>
+            <p class="w3-center">
+                The United Kingdom is a society which boasts of a large diversity. The diversity and ethnic spread is extremely important when looking at other facts and statistics.
+                The population helps reason and understand the significance of certain facts and statisics. The visualisation below shows a comparison between different ethnic groups,
+                the exact number can be seen when interacting with individual bars. 
+            </p>
+            <div class = "w3-center "id = "first">
+            </div>
+            <script type="text/javascript" src = "Graphs/population.js">  </script>
+        </div>
+        <div class="w3-row w3-padding-64 backgroundbaby" id="infantMort">
+            <h1 class="w3-center">Infant Mortality </h1><br>
+            <p class="w3-center">
+                What is a infant morality? This is when a child has unfortunately died below the age of 1. This stacked area graph shows the rate at which infants die by ethniciy, each area representes
+                100% of the value. Whites have the lowest infant mortality rates.   
+            </p>
+            <div class="w3-center" id = "infant">
+            </div>
+            <script type="text/javascript" src = "Graphs/infant.js">  </script>
+        </div>
+        <div class="w3-row w3-padding-64 backgroundpolice" src="/images/police.jpeg"  id="stopnsearch">
+            <h1 class="w3-center">Stop and Search</h1><br>
+            <p class="w3-center">
+                What is Stop and Search? Stop and Search are powers given to police others to intervene with individuals or groups, to keep the general population safe.
+                These interventions are carried out on grounds that police officers suspect individuals or groups of drug offences, burglary, theft and or terrorism.
+                The problem with stop and search tactics is that it is based on profiling of individuals, this profiling can bring out tendencies of racial discrimination.
+                The graphs below show overall and normalised stop and search statisics from the period of 2009 to 2018. As the graph shows there has been a reduction of stop and searches
+                as a result of reforms brought forward between 2013 to 2016.
+            </p>
+            <div class="w3-center" id = "second">
+            </div>
+            <script type="text/javascript"  src = "Graphs/StopSearch.js">  </script>
+            <p class="w3-center">
+                When looking at the overall graph it shows that whites have the highest number of stop and searches, however this is because they are the majority in population.
+                When the data is normalised, by dividing by the ethnic group population, the graph is much different. 
+            </p>
+            <div class="w3-center" id = "normalised">
+            </div>
+            <script type="text/javascript"  src = "Graphs/normalised.js">  </script>
+        </div>
+        <div class="w3-row w3-padding-64 backgroundwealth" id="wealth">
+            <h1 class="w3-center">Household Wealth</h1><br>
+            <p class="w3-center">
+                What is household wealth? This is an entire families value, where value is measured by the difference between the value of a household's assets and the value 
+                of its liabilities. Essentially this determines how rich and how much money a family owns. This graph visualises the differene in household wealth between 
+                different ethnic groups by calculating a mean and median for each ethnic group. Increased household wealth gives children a better start in life.
+            </p>
+            <div class = "w3-center" id = "third">
+            </div>
+            <script type="text/javascript" src = "Graphs/wealth.js">  </script>
+        </div> 
+        <div class="w3-row w3-padding-64 backgroundjudge" id="conviction">
+            <h1 class="w3-center">Conviction Rate</h1><br>
+            <p class="w3-center">
+                What is conviction rate? This is the rate at which suspects of crime who are charged end up being convicted of that crime. This graph visualises the percentage
+                at which each ethniciy is convicted of a crime from the period of 2009 to 2017.
+            </p>
+            <div class="w3-center" id = "fourth">
+            </div>
+            <script type="text/javascript" src = "Graphs/conviction.js">  </script>
+        </div>
+        <div class="w3-row w3-padding-64 backgroundgap" id="pay">
+            <h1 class="w3-center">Pay Gap</h1><br>
+            <p class="w3-center">
+                What is meant by a pay gap? Pay gap is the difference in average gross hourly earnings between the different ethnic groups. In this study we look at the pay gap between all ethnic groups
+                against White British. A positive percentage above the white British signifies a negative pay gap, so they earnt less than White British and the opposite meaning they earnt more than White British.
+                So in 2012, the Asian population earnt 12% less than their white British counter-parts. 
+            </p>
+            <div class="w3-center" id = "fifth">
+            </div>
+            <script type="text/javascript" src = "Graphs/pay.js">  </script>
+        </div>
+        <div class="w3-row w3-padding-64 backgroundpoverty" id="poverty">
+            <h1 class="w3-center">Low Income homes </h1><br>
+            <p class="w3-center">
+                What is a low income home? Low income is determined by living less than 60% if the median income. A low income house live very close or if not in poverty.
+                They live usually in poor living conditions, and sometimes struggle to put food on the table, heat their homes and pay their bills. 
+                This graph visualises the percentage of ethnic groups who live in low income homes, with a comparison to the national average.  
+            </p>
+            <div class="w3-center" id = "sixth">
+            </div>
+            <script type="text/javascript" src = "Graphs/lowIncome.js">  </script>
+        </div>
+        <div class="w3-row w3-padding-64 backgroundtiles" id = "conclusion">
+            <h1 class="w3-center">Conclusion</h1><br>
+            <p class="w3-center">
+                As you can see from the data, ethnic minorities are disadvantaged in most aspects of life. 
+                This includes pay, wealth, profiling from police, infant mortality and so on. However, ethnic minorities are not 
+                discrimated against in court. 
+                <br>
+                <br>
+                So how does your ethnicity impact your life in the UK?
+                <br>
+                If you are white British or white you are more likely to be convicted of crime. 
+                <br>
+                However if you are an ethnic minority
+        you are more likely to 
+                earn less, they are more like to possess less household wealth, more likely to live in a low income home, more likely
+                to die before the age of 1 and more likely to be profiled by the police. This paints a much starker picture as an ethnic minority.
+            </p>
+
+        </div>
+        
+    </body>
+</html>
